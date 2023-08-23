@@ -1,0 +1,25 @@
+body {
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+table {
+    position: relative;
+    width: 60%;
+}
+
+table, tr, td, th {
+    border: solid #000000;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    width: 300px;
+    height: 30px;
+}
+
+tr:nth-child(even){
+    background-color: rgb(0, 73, 138);
+}
