@@ -2,24 +2,66 @@ body {
     overflow: auto;
     width: 100vw;
     height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 table {
     position: relative;
-    width: 60%;
+    width: 70%;
+    text-transform: uppercase;
 }
 
-table, tr, td, th {
-    border: solid #000000;
+table, tr, th {
     border-collapse: collapse;
     text-align: center;
+    border-bottom: solid #000000;
+    margin: 0 0 20px 0;
 }
 
 th {
-    width: 300px;
-    height: 30px;
+    padding: 10px 0 10px 0;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 0;
+}
+
+.placar {
+    width: 30px;
+    border: none;
+}
+
+.x {
+    border: none;
+}
+
+.vencedor {
+    background-color: #00ff00;
+    font-weight: bold;
+}
+
+.vencedor-jogo:hover {
+    background-color: #ffff00;
+  }
+
+td {
+    border: solid #000000;
+    cursor: pointer;
+    width: auto;
+}
+
+tr:hover, tr:nth-child(even):hover {
+    background-color: red;
 }
 
 tr:nth-child(even){
-    background-color: rgb(0, 73, 138);
+    background-color: rgb(92, 163, 224);
 }

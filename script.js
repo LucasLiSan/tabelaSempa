@@ -1,25 +1,18 @@
-let selectedCell = null;
+document.addEventListener('DOMContentLoaded', function () {
+  const vencedoresJogos = document.querySelectorAll('.vencedor-jogo');
 
-  function changeText(cell) {
-    if (selectedCell) {
-      selectedCell.textContent = selectedCell.textContent.replace("Vencedor Jogo 1", "EMEB Oleriano Gonçalves x EMEB Fernando Sérgio");
-      selectedCell.classList.remove("selected");
-    }
+  vencedoresJogos.forEach(vencedor => {
+    const jogoRelacionadoID = vencedor.getAttribute('data-jogo-relacionado');
+    const equipe1 = document.getElementById(`equipe-1-${jogoRelacionadoID}`);
+    const equipe2 = document.getElementById(`equipe-2-${jogoRelacionadoID}`);
+    const textoOriginal = vencedor.textContent;
 
-    if (cell !== selectedCell) {
-      selectedCell = cell;
-      selectedCell.classList.add("selected");
-      selectedCell.textContent = selectedCell.textContent.replace("EMEB Oleriano Gonçalves x EMEB Fernando Sérgio", "Vencedor Jogo 1");
-    } else {
-      selectedCell = null;
-    }
-  }
+    vencedor.addEventListener('mouseover', function () {
+      vencedor.textContent = `${equipe1.textContent} x ${equipe2.textContent}`;
+    });
 
-  function handleClick(event) {
-    const clickedCell = event.target.closest("td");
-    if (clickedCell) {
-      changeText(clickedCell);
-    } else if (selectedCell) {
-      changeText(selectedCell);
-    }
-  }
+    vencedor.addEventListener('mouseout', function () {
+      vencedor.textContent = textoOriginal;
+    });
+  });
+});
