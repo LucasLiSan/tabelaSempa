@@ -3,10 +3,11 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="style-2.css">
+            <script type="text/javascript" src="script.js"></script>
             <title>Document</title>
         </head>
-        <body>
+        <body onclick="handleClick(event)">
             <h1>Categoria - A</h1>
             <h2>Futsal Masculino</h2>
             <table>
@@ -21,45 +22,133 @@
                     <td>23/08/2023</td>
                     <td>10H</td>
                     <td>Ginásio Mario Covas</td>
-                    <td>EMEB Prof. Fernando Sérgio</td>
-                    <td></td>
-                    <td>X</td>
-                    <td></td>
-                    <td>EMEB Pref. Prof. José Mendes</td>
+                    <td class="equipe">EMEB Prof. Fernando Sérgio</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">EMEB Pref. Prof. José Mendes</td>
                     <td>1</td>
                 </tr>
                 <tr>
                     <td>24/08/2023</td>
                     <td>10H40</td>
                     <td>Ginásio Mario Covas</td>
-                    <td>EMEB Prof. Olga Clivatti</td>
-                    <td></td>
-                    <td>X</td>
-                    <td></td>
-                    <td>EMEB Pedreira do Arapongal</td>
+                    <td class="equipe">EMEB Prof. Olga Clivatti</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">EMEB Pedreira do Arapongal</td>
                     <td>2</td>
                 </tr>
                 <tr>
                     <td>24/08/2023</td>
                     <td>09H20</td>
                     <td>Ginásio Mario Covas</td>
-                    <td>Colégio Adventista</td>
-                    <td></td>
-                    <td>X</td>
-                    <td></td>
-                    <td>EMEB Christiano de Oliveira</td>
+                    <td class="equipe">Colégio Adventista</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">EMEB Christiano de Oliveira</td>
                     <td>3</td>
                 </tr>
                 <tr>
                     <td>24/08/2023</td>
                     <td>10H</td>
                     <td>Ginásio Mario Covas</td>
-                    <td>EMEB Pingo de Gente</td>
-                    <td></td>
-                    <td>X</td>
-                    <td></td>
-                    <td>EMEB Ver. Kesao Kasuga/Prof. Ida Emilia</td>
+                    <td class="equipe">EMEB Pingo de Gente</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">EMEB Ver. Kesao Kasuga/Prof. Ida Emilia</td>
                     <td>4</td>
+                </tr>
+                <tr>
+                    <td>28/08/2023</td>
+                    <td>08H</td>
+                    <td>Ginásio Mario Covas</td>
+                    <td class="equipe">EMEB Brig. do Ar Alberto Bertelli</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">SESI Registro</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>28/08/2023</td>
+                    <td>08H30</td>
+                    <td>Ginásio Mario Covas</td>
+                    <td class="equipe">EMEB Prof. Nicea Hirota</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">EMEB Pref. Josino Silveira</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>28/08/2023</td>
+                    <td>09H</td>
+                    <td>Ginásio Mario Covas</td>
+                    <td class="equipe">EMEB Pref. José de Carvalho</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">EMEB Oleriano Gonçalves</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>28/08/2023</td>
+                    <td>11H</td>
+                    <td>Ginásio Mario Covas</td>
+                    <td class="equipe">EMEB Pres. Juscelino Kubitschek</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">EMEB Prof. Anna Pinto</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>29/08/2023</td>
+                    <td>10H</td>
+                    <td>Ginásio Mario Covas</td>
+                    <td class="equipe">Vencedor Jogo 1</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">Vencedor Jogo 2</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>29/08/2023</td>
+                    <td>10H30</td>
+                    <td>Ginásio Mario Covas</td>
+                    <td class="equipe">Vencedor Jogo 3</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">Vencedor Jogo 4</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>29/08/2023</td>
+                    <td>11H</td>
+                    <td>Ginásio Mario Covas</td>
+                    <td class="equipe">Vencedor Jogo 5</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">Vencedor Jogo 6</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>29/08/2023</td>
+                    <td>11H30</td>
+                    <td>Ginásio Mario Covas</td>
+                    <td class="equipe">Vencedor Jogo 7</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">Vencedor Jogo 8</td>
+                    <td>12</td>
                 </tr>
             </table>
             <h2>Futsal Feminino</h2>
@@ -75,45 +164,78 @@
                     <td>24/08/2023</td>
                     <td>08H40</td>
                     <td>Ginásio Mario Covas</td>
-                    <td>EMEB Oleriano Gonçalves</td>
-                    <td></td>
-                    <td>X</td>
-                    <td></td>
-                    <td>EMEB Prof. Fernando Sérgio</td>
+                    <td class="equipe">EMEB Oleriano Gonçalves</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">EMEB Prof. Fernando Sérgio</td>
                     <td>1</td>
                 </tr>
                 <tr>
                     <td>24/08/2023</td>
                     <td>08H</td>
                     <td>Ginásio Mario Covas</td>
-                    <td>EMEB Pedreira do Arapongal</td>
-                    <td></td>
-                    <td>X</td>
-                    <td></td>
-                    <td>Colégio Adventista</td>
+                    <td class="equipe">EMEB Pedreira do Arapongal</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">Colégio Adventista</td>
                     <td>2</td>
                 </tr>
                 <tr>
                     <td>24/08/2023</td>
                     <td>11H20</td>
                     <td>Ginásio Mario Covas</td>
-                    <td>EMEB Prof. Nicea Hirota</td>
-                    <td></td>
-                    <td>X</td>
-                    <td></td>
-                    <td>EMEB Pres. Juscelino Kubitschek</td>
+                    <td class="equipe">EMEB Prof. Nicea Hirota</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">EMEB Pres. Juscelino Kubitschek</td>
                     <td>3</td>
                 </tr>
                 <tr>
-                    <td>24/08/2023</td>
-                    <td>10H</td>
+                    <td>29/08/2023</td>
+                    <td>08H</td>
                     <td>Ginásio Mario Covas</td>
-                    <td>EMEB Pingo de Gente</td>
-                    <td></td>
-                    <td>X</td>
-                    <td></td>
-                    <td>EMEB Ver. Kesao Kasuga/Prof. Ida Emilia</td>
+                    <td class="equipe">EMEB Pingo de Gente</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">Vencedor Jogo 1</td>
                     <td>4</td>
+                </tr>
+                <tr>
+                    <td>29/08/2023</td>
+                    <td>08H30</td>
+                    <td>Ginásio Mario Covas</td>
+                    <td class="equipe">Vencedor Jogo 2</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">SESI Registro</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>29/08/2023</td>
+                    <td>09H</td>
+                    <td>Ginásio Mario Covas</td>
+                    <td class="equipe">EMEB Brig. Do Ar Alberto Bertelli</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">EMEB Pref. Prof. José Mendes</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>29/08/2023</td>
+                    <td>09H30</td>
+                    <td>Ginásio Mario Covas</td>
+                    <td class="equipe">Vencedor Jogo 3</td>
+                    <td class="placar"></td>
+                    <td class="x">X</td>
+                    <td class="placar"></td>
+                    <td class="equipe">EMEB Ver. Kesao Kasuga/Emilia Leib</td>
+                    <td>7</td>
                 </tr>
             </table>
         </body>

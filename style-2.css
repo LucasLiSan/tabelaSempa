@@ -1,0 +1,36 @@
+body {
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+table {
+    position: relative;
+    width: 60%;
+    text-transform: uppercase;
+}
+
+table, tr, th {
+    border-collapse: collapse;
+    text-align: center;
+    height: 50px;
+    border-bottom: solid #000000;
+}
+
+.placar {
+    width: 30px;
+    border: none;
+}
+
+.x {
+    border: none;
+}
+
+td {
+    border: solid #000000;
+    cursor: pointer;
+}
+
+tr:nth-child(even){
+    background-color: rgb(92, 163, 224);
+}
