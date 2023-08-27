@@ -2,11 +2,87 @@ body {
     overflow: auto;
     width: 100vw;
     height: 100vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+nav {
+    position: fixed;
+    height: 100%;
+    width: 15%;
+    top: 0;
+    margin: 0;
+    z-index: 999;
+    left: 0;
+}
+
+ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    left: 0;
+}
+
+li{
+    display: flex;
+    background-color: #0000ff;
+    color: #ffffff;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 3px 0 3px 0;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover {
+    color: #deb887;
+}
+
+li:hover {
+    background-color: #6495ed;
+    color: #deb887;
+}
+
+section {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    width: 100%;
+    top: 90px;
+}
+
+.titulo {
+    position: fixed;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    z-index: 998;
+    background-color: #0000ff;
+    top: 0;
+    left: 0;
+    color: #ffffff;
 }
 
 table {
@@ -26,11 +102,8 @@ th {
     padding: 10px 0 10px 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
     text-transform: uppercase;
-}
-
-h2 {
     margin: 0;
 }
 
@@ -44,12 +117,12 @@ h2 {
 }
 
 .vencedor {
-    background-color: #00ff00;
+    background-color: #4cfc4c;
     font-weight: bold;
 }
 
 .vencedor-jogo:hover {
-    background-color: #ffff00;
+    background-color: #f1f164;
   }
 
 td {
@@ -59,7 +132,7 @@ td {
 }
 
 tr:hover, tr:nth-child(even):hover {
-    background-color: red;
+    background-color: #f05c5c;
 }
 
 tr:nth-child(even){
