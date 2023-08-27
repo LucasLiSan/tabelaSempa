@@ -138,3 +138,58 @@ tr:hover, tr:nth-child(even):hover {
 tr:nth-child(even){
     background-color: rgb(92, 163, 224);
 }
+
+@media only screen and (max-width: 600px) and (min-width: 200px) {
+    .titulo {
+        position: fixed;
+        height: 4%;
+    }
+    
+    section {
+        width: 1000px;
+        top: 155px;
+        left: 230px;
+    }
+
+    table {
+        width: 88%;
+    }
+
+    nav {
+        position: fixed;
+        height: 25%;
+        width: 20%;
+    }
+
+    li {
+        height: 9%;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+    .titulo {
+        position: fixed;
+        height: 8%;
+    }
+    
+    section {
+        width: 1000px;
+        top: 110px;
+        left: 230px;
+    }
+
+    table {
+        width: 88%;
+    }
+
+    nav {
+        position: fixed;
+        height: 45%;
+        width: 20%;
+    }
+
+    li {
+        height: 9%;
+    }
+}
+
