@@ -129,6 +129,7 @@ td {
     border: solid #000000;
     cursor: pointer;
     width: auto;
+    height: 38px;
 }
 
 tr:hover, tr:nth-child(even):hover {
