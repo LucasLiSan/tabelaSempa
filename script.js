@@ -91,4 +91,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const arquivo2 = '3008.html'; // Substitua pelo nome de outro arquivo
     manipularArquivo(arquivo2, vencedor);
   });
+
+  vencedoresJogos.forEach(vencedor => {
+    const arquivo2 = '3108.html'; // Substitua pelo nome de outro arquivo
+    manipularArquivo(arquivo2, vencedor);
+  });
+
+  vencedoresJogos.forEach(vencedor => {
+    const arquivo2 = '0109.html'; // Substitua pelo nome de outro arquivo
+    manipularArquivo(arquivo2, vencedor);
+  });
+
+  vencedoresJogos.forEach(vencedor => {
+    const arquivo2 = '0609.html'; // Substitua pelo nome de outro arquivo
+    manipularArquivo(arquivo2, vencedor);
+  });
 });
